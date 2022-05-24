@@ -1,0 +1,54 @@
+.app {
+  margin: 0;
+  //margin: 0 1rem;
+  padding: 0 1rem;
+  // width: 100%;
+  height: 100%;
+
+  .search {
+    padding: 1rem;
+    background-color: hsl(9, 91%, 86%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 5px solid hsl(282, 45%, 70%);
+    height: 100%;
+
+    .favourite-list {
+      width: 24%;
+      padding: 5px;
+      background-color: hsl(93, 58%, 75%);
+      min-height: 600px;
+      max-height: 600px;
+      overflow-y: scroll;
+    }
+
+    .search-result {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 75%;
+      background-color: hsl(198, 78%, 78%);
+      gap: 6%;
+      min-height: 600px;
+      max-height: 600px;
+      overflow-y: scroll;
+    }
+  }
+
+  .text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+  }
+}
