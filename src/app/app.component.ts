@@ -77,6 +77,13 @@ export class AppComponent {
     } else {
       const index = this.favouriteList.findIndex((item) => item.id === res.id);
       this.favouriteList.splice(index, 1);
+      this.searchList = this.searchList.map(item =>{
+        item = {...item}
+        if(item.id === res.id){
+          item.isFav = res.isFav;
+        }
+        return item;
+      })
     }
   }
 
