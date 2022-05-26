@@ -4,14 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { CdsModule } from '@cds/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { CardComponent } from './components/card/card.component';
-import { FavListComponent } from './components/fav-list/fav-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    FavListComponent
   ],
   imports: [
     BrowserModule,
